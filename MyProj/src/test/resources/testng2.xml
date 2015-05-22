@@ -1,0 +1,10 @@
+<suite name="flipkart_suite">
+	<test name="test2">
+	<classes>
+		<class name ="P2.Test_prog"/>
+		<methoods>
+			<include name="testing"/>
+		</methoods>
+	</classes>
+	</test>
+</suite>

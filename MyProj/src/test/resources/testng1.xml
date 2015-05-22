@@ -1,0 +1,10 @@
+<suite name="yahoo_suite">
+	<test name="test1">
+	<classes>
+		<class name ="P1.Test_prog"/>
+		<methoods>
+			<include name="run_method"/>
+		</methoods>
+	</classes>
+	</test>
+</suite>
