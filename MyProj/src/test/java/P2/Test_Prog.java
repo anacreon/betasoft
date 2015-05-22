@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class Test_Prog {
 	   @Test
-	    public void testing()
+	    public void testing() throws Exception
 	    {
 	       FirefoxDriver driver=new FirefoxDriver();
 	       

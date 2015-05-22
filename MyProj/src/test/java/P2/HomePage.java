@@ -18,7 +18,7 @@ public class HomePage {
     public void selectProduct()
     {
                //go to electronics
-    	new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[class='menu-10']")));
+    	new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class='menu-10']")));
                //select HP product
     	driver.findElement(By.linkText("HP")).click();
     }
