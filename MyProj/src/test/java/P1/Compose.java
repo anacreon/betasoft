@@ -17,10 +17,10 @@ public class Compose
   {
 	  Thread.sleep(6000);
 	  Reporter.log("==========Compose mail========");
-	  driver.findElement(By.xpath("//*[@class='btn btn-compose']")).click();
+	  driver.findElement(By.xpath("//*[@class='composeicon']")).click();
 	  Thread.sleep(5000);
-	  driver.findElement(By.id("to-field")).sendKeys("abcd@gmail.com");
-	  driver.findElement(By.id("subject-field")).sendKeys("test mail");
+	  driver.findElement(By.id("to")).sendKeys("abcd@gmail.com");
+	  driver.findElement(By.id("Subj")).sendKeys("test mail");
 	  driver.findElement(By.id("rtetext")).sendKeys("this is test mail sample");
 	  Thread.sleep(5000);  
   }

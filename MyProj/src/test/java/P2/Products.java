@@ -17,16 +17,18 @@ public class Products {
     public void addcart() throws Exception
     {
          //code to add any 2 product to card
-    	List<WebElement> products = driver.findElements(By.xpath("//*[@class='gd-col gu3']"));
+    	
     	Reporter.log("====Urls of products in page======");
     	for(int i =0; i< 2; i++)
     	{
+    		List<WebElement> products = driver.findElements(By.xpath("//*[@class='gd-col gu3']"));
     		products.get(i).click();
-    		wait(5000);
+    		Thread.sleep(5000);
     		Reporter.log(driver.getCurrentUrl());
     		driver.findElement(By.xpath("//*[@class='btn-buy-now btn-big  current']")).click();
+    		Thread.sleep(5000);
     		driver.navigate().back();
-    		wait(5000);
+    		Thread.sleep(5000);
     	}
     }
     public void checkcart() throws Exception
@@ -38,10 +40,10 @@ public class Products {
     	for(int i = 0; i < products.size(); i++)
     	{
     		products.get(i).click();
-    		wait(5000);
+    		Thread.sleep(5000);
     		Reporter.log(driver.getCurrentUrl());
     		driver.navigate().back();
-    		wait(5000);
+    		Thread.sleep(5000);
     	}
     }
 }

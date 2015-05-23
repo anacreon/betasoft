@@ -3,7 +3,7 @@ package P2;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-public class Test_Prog {
+public class Test_prog {
 	   @Test
 	    public void testing() throws Exception
 	    {

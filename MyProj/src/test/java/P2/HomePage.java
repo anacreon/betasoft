@@ -15,11 +15,15 @@ public class HomePage {
               //to open the url of flipkart
     	driver.get("http://www.flipkart.com/");
     }
-    public void selectProduct()
+    public void selectProduct() throws Exception
     {
                //go to electronics
-    	new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class='menu-10']")));
+   
+    	Actions move = new Actions(driver).moveToElement(driver.findElement(By.xpath("//*[@class='menu-text fk-inline-block']")));
+    	move.perform();
+    	Thread.sleep(5000);
                //select HP product
     	driver.findElement(By.linkText("HP")).click();
+    	Thread.sleep(5000);
     }
 }
